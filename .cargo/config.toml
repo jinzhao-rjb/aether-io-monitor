@@ -1,0 +1,7 @@
+[build]
+# 指定目标为 BPF 字节码
+target = "bpfel-unknown-none"
+
+[unstable]
+# 💡 这里的 core 是关键，它让代码能在没有系统的内核里跑
+build-std = ["core"]
